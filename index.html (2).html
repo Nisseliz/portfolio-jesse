@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jonathan Jesse | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#FAF7F2;--surface:#fff;--ink:#1B1410;--muted:#6A6058;--line:#E7DFD3;--amber:#F2A413;--purple:#6B2FD0;
+--display:"Oswald","Arial Narrow",system-ui,sans-serif;--body:"Poppins",system-ui,-apple-system,sans-serif;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15100C;--surface:#201912;--ink:#F6EFE6;--muted:#B3A79B;--line:#352B21;--purple:#A47BFF;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#15100C;--surface:#201912;--ink:#F6EFE6;--muted:#B3A79B;--line:#352B21;--purple:#A47BFF;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:1.05;text-wrap:balance}
+.wrap{max-width:880px;margin:0 auto;padding:36px max(16px,env(safe-area-inset-left,0px)) 56px;display:flex;flex-direction:column;gap:48px}
+.bars{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.bars i{display:block;height:9px;border-radius:2px}
+.bars i:nth-child(1){width:46%;background:var(--amber)}.bars i:nth-child(2){width:34%;background:var(--purple)}.bars i:nth-child(3){width:22%;background:var(--ink)}
+.hero h1{font-size:clamp(46px,12vw,92px);font-weight:700;letter-spacing:.01em;margin-top:18px}
+.hero h1 span{color:var(--amber)}
+.role{font-size:clamp(17px,3vw,21px);font-weight:500;margin-top:14px;max-width:34ch}
+.lede{color:var(--muted);margin-top:14px;max-width:58ch}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--purple)}
+.sec{display:flex;flex-direction:column;gap:16px}
+.sec h2{font-size:clamp(28px,5vw,40px);font-weight:700}
+.about p{max-width:62ch;font-size:17px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--amber);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:6px}
+.card:nth-child(2){border-left-color:var(--purple)}
+.card b{font-family:var(--display);font-size:22px;text-transform:uppercase;font-weight:700}
+.card span{color:var(--muted);font-size:14px}
+.job{display:grid;grid-template-columns:150px 1fr;gap:8px 24px;padding:20px 0;border-top:1px solid var(--line)}
+.job:last-child{border-bottom:1px solid var(--line)}
+.when{font-size:13px;color:var(--muted);padding-top:4px}
+.job h3{font-size:22px;font-weight:700}
+.org{color:var(--muted);font-weight:500}
+.job ul{margin:10px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skills span{padding:7px 14px;border:1px solid var(--line);background:var(--surface);border-radius:999px;font-size:14px;font-weight:500}
+.contact{background:var(--ink);color:var(--bg);border-radius:16px;padding:30px 24px;display:flex;flex-direction:column;gap:12px}
+.contact h2{color:var(--amber);font-size:clamp(28px,5vw,40px)}
+.contact p{opacity:.85;max-width:52ch}
+.line{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+.k{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.65;width:80px}
+.v{font-size:18px;font-weight:600;overflow-wrap:anywhere;user-select:all}
+footer{font-size:12px;color:var(--muted);text-align:center}
+@media (max-width:700px){.stats{grid-template-columns:1fr}.job{grid-template-columns:1fr}.wrap{gap:40px;padding-top:24px}}
+</style></head>
+<body>
+<main class="wrap">
+
+<header class="hero">
+  <div class="bars" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h1>Jonathan Jesse<span>.</span></h1>
+  <p class="role">BBA student who talks to people easily and wants to start a career in sales.</p>
+  <p class="lede">Final-year BBA at Kristu Jayanti University, Bengaluru (2027). Communication is my strongest skill, and I&rsquo;m looking for an entry-level sales role at a marketing or advertising agency where I can learn fast and earn my place.</p>
+</header>
+
+<section class="sec about" aria-labelledby="a">
+  <div class="eyebrow">About</div>
+  <h2 id="a">I connect with people.</h2>
+  <p>Sales starts with a good conversation, and that&rsquo;s where I&rsquo;m strongest. I explain things clearly, listen before I pitch, and stay confident when talking to someone new. I don&rsquo;t have a long CV yet, and I won&rsquo;t pretend I do. What I offer is honest effort, quick learning and the drive to prove myself from day one.</p>
+</section>
+
+<section class="sec" aria-labelledby="h">
+  <div class="eyebrow">What I bring</div>
+  <h2 id="h">Three things you can count on</h2>
+  <div class="stats">
+    <div class="card"><b>Communication</b><span>Clear, confident and easy to talk to.</span></div>
+    <div class="card"><b>Hunger to learn</b><span>I take feedback well and improve quickly.</span></div>
+    <div class="card"><b>Reliability</b><span>I show up, follow up and finish what I start.</span></div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="e">
+  <div class="eyebrow">Experience</div>
+  <h2 id="e">Where I&rsquo;ve worked</h2>
+  <div>
+    <article class="job">
+      <div class="when">1-month internship</div>
+      <div>
+        <h3>Intern</h3>
+        <p class="org">Thoshika Financial Services (TFS)</p>
+        <ul>
+          <li>Worked in a customer-facing financial services company and saw how a sales-led business talks to clients.</li>
+          <li>Practised professional communication in a real working environment.</li>
+          <li>Learned the basics of following up with leads and building trust.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="ed">
+  <div class="eyebrow">Education</div>
+  <h2 id="ed">Where I&rsquo;ve studied</h2>
+  <div>
+    <article class="job"><div class="when">Expected 2027</div><div><h3>BBA</h3><p class="org">Kristu Jayanti University (Deemed), Bengaluru</p></div></article>
+    <article class="job"><div class="when">Class XI&ndash;XII</div><div><h3>Intermediate</h3><p class="org">Ratna Junior College</p></div></article>
+    <article class="job"><div class="when">Class X</div><div><h3>Schooling</h3><p class="org">St. Patrick&rsquo;s High School, Secunderabad</p></div></article>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="s">
+  <div class="eyebrow">Skills</div>
+  <h2 id="s">What I&rsquo;m good at</h2>
+  <div class="skills"><span>Communication</span><span>Persuasion</span><span>Active listening</span><span>Relationship building</span><span>Follow-ups</span><span>Quick learner</span><span>Teamwork</span></div>
+</section>
+
+<section class="contact" aria-labelledby="c">
+  <h2 id="c">Let&rsquo;s talk.</h2>
+  <p>Open to entry-level sales and sponsorship roles. I reply fast.</p>
+  <div class="line"><span class="k">Phone</span><span class="v">+91 74168 18731</span></div>
+  <div class="line"><span class="k">Email</span><span class="v">jonathanjesse2006@gmail.com</span></div>
+  <div class="line"><span class="k">Location</span><span class="v">Hyderabad, Telangana</span></div>
+</section>
+
+<footer>Jonathan Jesse &middot; Hyderabad, Telangana</footer>
+</main>
+</body></html>
